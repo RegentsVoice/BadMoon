@@ -1,5 +1,7 @@
 # BadMoon.sh
 
+<img width="1262" height="944" alt="изображение" src="https://github.com/user-attachments/assets/6b297718-5ceb-4ddf-9990-ba19a2b5e3b6" />
+
 [English](#English) | [Русский](#Русский)
 
 

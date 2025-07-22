@@ -1,9 +1,8 @@
-```markdown
 # BadMoon.sh
 
 [English](#english) | [Русский](#russian)
 
-```
+
 
 ## English
 

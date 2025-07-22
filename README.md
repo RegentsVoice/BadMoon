@@ -1,6 +1,6 @@
 # BadMoon.sh
 
-[English](#english) | [Русский](#russian)
+[English](#English) | [Русский](#Русский)
 
 
 

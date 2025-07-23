@@ -148,6 +148,7 @@ fetch_image() {
 }
 
 display_image() {
+  cls
   kitty +kitten icat --clear 2>/dev/null
   local w=$(( $(tput cols) * 90 / 100 ))
   local h=$(( $(tput lines) * 80 / 100 ))
@@ -243,21 +244,25 @@ enter_tags() {
   echo_status_temporary "Tags set: $USER_TAGS"
 }
 
-main() {
-  if [[ ! "$BASH_VERSION" ]]; then
-    echo "Error: Script must be run in bash, not sh." >&2
-    exit 1
-  fi
-
-  mkdir -p "$HOME/.config/BadMoon"
-  mkdir -p "$DOWNLOAD_DIR"
-  tput civis
+cls() {
   local w=$(( $(tput cols) * 90 / 100 ))
   local h=$(( $(tput lines) * 80 / 100 ))
   for ((i=0; i<h; i++)); do
     tput cup "$i" 0
     tput el
   done
+}
+
+main() {
+  if [[ ! "$BASH_VERSION" ]]; then
+    echo "Error: Script must be run in bash, not sh." >&2
+    exit 1
+  fi
+  cls
+  mkdir -p "$HOME/.config/BadMoon"
+  mkdir -p "$DOWNLOAD_DIR"
+  tput civis
+
   main_menu
   tput cnorm
 }
